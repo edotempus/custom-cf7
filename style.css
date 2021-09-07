@@ -1,0 +1,114 @@
+/*ADD DIV-WRAPPER WITH id="custom-cf7" TO CONTACT FORM*/
+
+:root {
+  /*input and textarea fields*/
+  --ccf7-input-background: white;
+  --ccf7-border-radius: 4px;
+  --ccf7-border-width: 1px;
+  --ccf7-border-color: black;
+  --ccf7-border-style: solid;
+  --ccf7-input-width: 100%;
+  --ccf7-input-height: 50px;
+  --ccf7-textarea-width: 100%;
+  --ccf7-textarea-height: 500px;
+  --ccf7-input-spacing: 20px;
+
+  /*label*/
+  --ccf7-label-color: black;
+  --ccf7-label-fontfamily: 'Open Sans', sans-serif;
+  --ccf7-label-fontweight: 700;
+  --ccf7-label-textcase: uppercase;
+  --ccf7-label-display: block;
+
+  /*hint*/
+  --ccf7-hint-color: black;
+  --ccf7-hint-fontfamily: 'Open Sans', sans-serif;
+  --ccf7-hint-fontweight: 500;
+  --ccf7-hint-textcase: none;
+  --ccf7-hint-display: block;
+
+  /*placeholder*/
+  --ccf7-placeholder-fontweight: 500;
+  --ccf7-placeholder-fontfamily: 'Open Sans', sans-serif;
+  --ccf7-placeholder-textcase: none;
+  --ccf7-placeholder-display: block;
+
+  /*submit button*/
+  --ccf7-button-color: white;
+  --ccf7-button-background: black;
+  --ccf7-button-borderradius: 5px;
+  --ccf7-button-textcase: none;
+  --ccf7-button-padding: 12px 20px;
+  --ccf7-button-margin: 0px 0 10px 0;
+  --ccf7-button-alignment: center;
+  --ccf7-button-fontfamily: 'Open Sans', sans-serif;
+  --ccf7-button-fontsize: 20px;
+  --ccf7-button-fontweight: 600;
+  --ccf7-button-letterspacing: 0.5px;
+  --ccf7-button-maxwidth: 200px;
+  --ccf-button-height: 80px;
+}
+
+#custom-cf7 input {
+  background: var(--ccf7-input-background);
+  border-radius: var(--ccf7-border-radius);
+  width: var(--ccf7-input-width);
+  height: var(--ccf7-input-height);
+}
+
+/*input spacing*/
+#custom-cf7 > p {
+  margin-top: var(--ccf7-input-spacing);
+}
+
+#custom-cf7 textarea {
+  background: var(--ccf7-input-background);
+  border-radius: var(--ccf7-border-radius);
+  width: var(--ccf7-textarea-width);
+  height: var(--ccf7-textarea-height);
+}
+
+#custom-cf7 label {
+  color: var(--ccf7-hint-color);
+  font-family: var(--ccf7-label-fontfamily);
+  font-weight: var(--ccf7-label-fontweight);
+  text-transform: var(--ccf7-label-textcase);
+  display: var(--ccf7-label-display);
+}
+
+/*submit button*/
+#custom-cf7 .wpcf7-submit {
+  background: var(--ccf7-button-background);
+  border-radius: var(--ccf7-button-borderradius);
+  color: var(--ccf7-button-color);
+  text-transform: var(--ccf7-button-textcase);
+  font-family: var(--ccf7-button-fontfamily);
+  font-size: var(--ccf7-button-fontsize);
+  font-weight: var(--ccf7-button-fontweight);
+  letter-spacing: var(--ccf7-letterspacing);
+  padding: var(--ccf7-button-padding);
+  margin: var(--ccf7-button-margin);
+  max-width: var(--ccf7-button-maxwidth);
+  height: var(--ccf-button-height);
+}
+/*submit button alignment*/
+#custom-cf7 p:last-child {
+  text-align: var(--ccf7-button-alignment) !important;
+}
+
+/*checkbox*/
+#custom-cf7 input[type='checkbox'] {
+  height: 28px !important;
+  width: 28px !important;
+}
+#custom-cf7 p:last-child > span:last-child {
+  position: relative;
+  top: -5px;
+  left: 15px;
+}
+
+/* google reference for when hiding the captcha badge*/
+#custom-cf7 .google-reference p {
+}
+#custom-cf7 .google-reference a {
+}
